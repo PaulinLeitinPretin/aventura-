@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>A Fuga dos Salões do Caos</title>
+</head>
+<body>
+    <main>
+        <!-- Passo 0: Início -->
+        <div class="passo ativo" id="passo-0">
+            <img src="img/saloes-do-caos.png" alt="Cenário dos Salões do Caos">
+            <p>Você está preso em uma cela de pedra nos Salões do Caos. No chão, encontra uma chave enferrujada e uma pedra pulsante com energia mágica instável. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="1">Usar a chave para abrir a cela</button>
+            <button class="btn-proximo" data-proximo="2">Tocar na pedra mágica</button>
+        </div>
+
+        <!-- Passo 1: Abrir a cela -->
+        <div class="passo" id="passo-1">
+            <p>Você usa a chave para abrir a cela. No corredor, você ouve um estrondo e percebe que a prisão está se desintegrando. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="3">Procurar uma saída</button>
+            <button class="btn-proximo" data-proximo="4">Seguir para o núcleo mágico</button>
+        </div>
+
+        <!-- Passo 2: Tocar na pedra -->
+        <div class="passo" id="passo-2">
+            <p>Ao tocar na pedra, você sente um poder imenso fluir para o seu corpo. Agora, com magia instável, você precisa decidir:</p>
+            <button class="btn-proximo" data-proximo="5">Usar a magia para explodir a cela</button>
+            <button class="btn-proximo" data-proximo="6">Esperar e absorver mais energia</button>
+        </div>
+
+        <!-- Passo 3: Procurar uma saída -->
+        <div class="passo" id="passo-3">
+            <p>Você encontra uma fissura mágica no chão que leva diretamente ao subsolo, mas o caminho parece instável. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="7">Entrar na fissura mágica</button>
+            <button class="btn-proximo" data-proximo="8">Continuar pelos corredores</button>
+        </div>
+
+        <!-- Passo 4: Seguir para o núcleo -->
+        <div class="passo" id="passo-4">
+            <p>Você segue para o núcleo mágico e percebe que ele está corrompido. Para escapar, será necessário decidir:</p>
+            <button class="btn-proximo" data-proximo="9">Desativar o núcleo</button>
+            <button class="btn-proximo" data-proximo="10">Absorver o poder do núcleo</button>
+        </div>
+
+        <!-- Passo 5: Explodir a cela -->
+        <div class="passo" id="passo-5">
+            <p>Com a energia instável, você explode a cela e cria uma abertura para o exterior. Mas a magia começa a afetar seu corpo. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="8">Correr para a saída</button>
+            <button class="btn-proximo" data-proximo="9">Controlar a magia e seguir para o núcleo</button>
+        </div>
+
+        <!-- Passo 6: Esperar -->
+        <div class="passo" id="passo-6">
+            <p>Ao absorver mais energia, você sente sua mente começar a se fragmentar. Um outro prisioneiro aparece e oferece ajuda. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="7">Aceitar ajuda</button>
+            <button class="btn-proximo" data-proximo="11">Recusar e agir sozinho</button>
+        </div>
+
+        <!-- Passo 7: Fissura mágica -->
+        <div class="passo" id="passo-7">
+            <p>Você entra na fissura mágica e se encontra no subsolo da prisão. Aqui, você descobre o verdadeiro motivo da sua captura: o Conselho Arcano teme seu potencial. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="9">Enfrentar o núcleo</button>
+            <button class="btn-proximo" data-proximo="10">Usar a magia instável para escapar</button>
+        </div>
+
+        <!-- Passo 8: Continuar pelos corredores -->
+        <div class="passo" id="passo-8">
+            <p>Nos corredores, você encontra guardas. Sem tempo para pensar, a magia instável em você cria uma explosão que destrói a área. Você escapa, mas não sem consequências.</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 9: Desativar o núcleo -->
+        <div class="passo" id="passo-9">
+            <p>Você desativa o núcleo, fazendo a prisão desmoronar. Com um último esforço, você escapa e jura destruir o Conselho Arcano.</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 10: Absorver o núcleo -->
+        <div class="passo" id="passo-10">
+            <p>Você absorve o poder do núcleo e se torna uma entidade de magia pura, mas perde sua humanidade no processo. Agora, você é um novo perigo para o reino.</p>
+            <p>Fim da aventura!</p>
+        </div>
+
+        <!-- Passo 11: Recusar ajuda -->
+        <div class="passo" id="passo-11">
+            <p>Você recusa a ajuda e tenta escapar sozinho, mas a energia instável acaba consumindo você. Sua fuga falha tragicamente.</p>
+            <p>Fim da aventura!</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
